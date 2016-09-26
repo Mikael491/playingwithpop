@@ -77,6 +77,10 @@
 		FC5EFD671D99AB6000E1010C /* HeroesWithPOP */ = {
 			isa = PBXGroup;
 			children = (
+				FCF86FB41D99D0250005517B /* Resources */,
+				FCF86FB31D99D01C0005517B /* Controllers */,
+				FCF86FB21D99D0150005517B /* Views */,
+				FCF86FB11D99D00E0005517B /* Models */,
 				FC5EFD681D99AB6000E1010C /* AppDelegate.swift */,
 				FC5EFD6A1D99AB6000E1010C /* ViewController.swift */,
 				FC5EFD6C1D99AB6000E1010C /* Main.storyboard */,
@@ -96,6 +100,34 @@
 			);
 			name = HeroesWithPOPTests;
 			path = FlowersWithPOPTests;
+			sourceTree = "<group>";
+		};
+		FCF86FB11D99D00E0005517B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FCF86FB21D99D0150005517B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FCF86FB31D99D01C0005517B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FCF86FB41D99D0250005517B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
