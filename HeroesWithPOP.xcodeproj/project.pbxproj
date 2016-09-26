@@ -77,6 +77,8 @@
 		FC5EFD671D99AB6000E1010C /* HeroesWithPOP */ = {
 			isa = PBXGroup;
 			children = (
+				FCF86FBB1D99D39B0005517B /* Extensions */,
+				FCF86FBA1D99D3880005517B /* Protocols */,
 				FCF86FB41D99D0250005517B /* Resources */,
 				FCF86FB31D99D01C0005517B /* Controllers */,
 				FCF86FB21D99D0150005517B /* Views */,
@@ -128,6 +130,20 @@
 			children = (
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		FCF86FBA1D99D3880005517B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		FCF86FBB1D99D39B0005517B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
