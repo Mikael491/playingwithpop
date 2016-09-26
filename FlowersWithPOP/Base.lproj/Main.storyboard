@@ -17,11 +17,35 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVJ-zp-FIb" userLabel="HeaderView">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0R6-07-rxU" userLabel="Logo">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="TOK-Yb-RZG"/>
+                                            <constraint firstAttribute="height" constant="50" id="Vmn-8H-oGd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0R6-07-rxU" firstAttribute="centerX" secondItem="NVJ-zp-FIb" secondAttribute="centerX" id="HzJ-ci-EIe"/>
+                                    <constraint firstAttribute="height" constant="74" id="YrQ-R3-rvB"/>
+                                    <constraint firstItem="0R6-07-rxU" firstAttribute="centerY" secondItem="NVJ-zp-FIb" secondAttribute="centerY" id="u4A-sB-3R6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NVJ-zp-FIb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CMY-GS-jsr"/>
+                            <constraint firstAttribute="trailing" secondItem="NVJ-zp-FIb" secondAttribute="trailing" id="Ozj-Uo-jLr"/>
+                            <constraint firstItem="NVJ-zp-FIb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lBi-qB-8gu"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="4.0479760119940034"/>
         </scene>
     </scenes>
 </document>

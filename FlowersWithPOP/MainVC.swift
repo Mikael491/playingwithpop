@@ -14,6 +14,7 @@ class MainVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("Running swiftly!")
     }
 
     override func didReceiveMemoryWarning() {
