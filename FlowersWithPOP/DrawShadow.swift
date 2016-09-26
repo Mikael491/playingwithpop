@@ -15,7 +15,7 @@ extension DrawShadow where Self: UIView {
     func addDropShadow() {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.7
-        layer.shadowRadius = 2.0
+        layer.shadowRadius = 5.0
         layer.shadowOffset = CGSize.zero
     }
     
