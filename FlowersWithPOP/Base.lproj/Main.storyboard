@@ -42,6 +42,9 @@
                             <constraint firstItem="NVJ-zp-FIb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lBi-qB-8gu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="NVJ-zp-FIb" id="x0P-Sf-h4s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
