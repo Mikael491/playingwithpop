@@ -12,6 +12,8 @@
 		FC5EFD701D99AB6000E1010C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5EFD6F1D99AB6000E1010C /* Assets.xcassets */; };
 		FC5EFD731D99AB6000E1010C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5EFD711D99AB6000E1010C /* LaunchScreen.storyboard */; };
 		FC5EFD7E1D99AB6000E1010C /* FlowersWithPOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EFD7D1D99AB6000E1010C /* FlowersWithPOPTests.swift */; };
+		FCEDB81B1D9B0753009AC27B /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB8191D9B0753009AC27B /* HeroCell.swift */; };
+		FCEDB81C1D9B0753009AC27B /* HeroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEDB81A1D9B0753009AC27B /* HeroCell.xib */; };
 		FCF86FB91D99D1B10005517B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FB81D99D1B10005517B /* MainVC.swift */; };
 		FCF86FBD1D99D4290005517B /* DrawShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FBC1D99D4290005517B /* DrawShadow.swift */; };
 		FCF86FBF1D99D76B0005517B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FBE1D99D76B0005517B /* HeaderView.swift */; };
@@ -39,6 +41,8 @@
 		FC5EFD791D99AB6000E1010C /* HeroesWithPOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroesWithPOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5EFD7D1D99AB6000E1010C /* FlowersWithPOPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersWithPOPTests.swift; sourceTree = "<group>"; };
 		FC5EFD7F1D99AB6000E1010C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCEDB8191D9B0753009AC27B /* HeroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		FCEDB81A1D9B0753009AC27B /* HeroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroCell.xib; sourceTree = "<group>"; };
 		FCF86FB81D99D1B10005517B /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FCF86FBC1D99D4290005517B /* DrawShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawShadow.swift; sourceTree = "<group>"; };
 		FCF86FBE1D99D76B0005517B /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		FC5EFD671D99AB6000E1010C /* HeroesWithPOP */ = {
 			isa = PBXGroup;
 			children = (
+				FCEDB8181D9B0725009AC27B /* Cells */,
 				FCF86FBB1D99D39B0005517B /* Extensions */,
 				FCF86FBA1D99D3880005517B /* Protocols */,
 				FCF86FB41D99D0250005517B /* Resources */,
@@ -109,6 +114,15 @@
 			);
 			name = HeroesWithPOPTests;
 			path = FlowersWithPOPTests;
+			sourceTree = "<group>";
+		};
+		FCEDB8181D9B0725009AC27B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FCEDB8191D9B0753009AC27B /* HeroCell.swift */,
+				FCEDB81A1D9B0753009AC27B /* HeroCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		FCF86FB11D99D00E0005517B /* Models */ = {
@@ -246,6 +260,7 @@
 				FC5EFD731D99AB6000E1010C /* LaunchScreen.storyboard in Resources */,
 				FC5EFD701D99AB6000E1010C /* Assets.xcassets in Resources */,
 				FC5EFD6E1D99AB6000E1010C /* Main.storyboard in Resources */,
+				FCEDB81C1D9B0753009AC27B /* HeroCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +283,7 @@
 				FCF86FB91D99D1B10005517B /* MainVC.swift in Sources */,
 				FCF86FC31D9A0CC00005517B /* DataService.swift in Sources */,
 				FCF86FC11D99F5E50005517B /* Heroes.swift in Sources */,
+				FCEDB81B1D9B0753009AC27B /* HeroCell.swift in Sources */,
 				FCF86FBF1D99D76B0005517B /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
