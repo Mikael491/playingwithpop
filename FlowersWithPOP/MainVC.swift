@@ -31,6 +31,8 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         collectionView.register(nib, forCellWithReuseIdentifier: "HeroCell")
         
         headerView.addDropShadow()
+        
+//        TODO: Set cell size
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
