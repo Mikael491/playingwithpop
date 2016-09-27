@@ -21,6 +21,9 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        dataService.delegate = self
+        dataService.addHeroToLair()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         
