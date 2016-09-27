@@ -14,9 +14,27 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="187" height="169"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QGm-8x-Gld"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTd-pb-Eer">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QGm-8x-Gld" secondAttribute="trailing" constant="8" id="7TW-Uc-lk0"/>
+                <constraint firstItem="QGm-8x-Gld" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Ff4-O8-UOt"/>
+                <constraint firstItem="QTd-pb-Eer" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="SJY-Ox-Sqc"/>
+                <constraint firstItem="QTd-pb-Eer" firstAttribute="top" secondItem="QGm-8x-Gld" secondAttribute="bottom" constant="8" id="SwA-YU-9L3"/>
+                <constraint firstItem="QGm-8x-Gld" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="dAa-mA-HFj"/>
+                <constraint firstAttribute="trailing" secondItem="QTd-pb-Eer" secondAttribute="trailing" constant="8" id="fIW-TE-hgu"/>
+                <constraint firstItem="QTd-pb-Eer" firstAttribute="top" secondItem="QGm-8x-Gld" secondAttribute="bottom" constant="8" id="kTl-dV-vvn"/>
+                <constraint firstAttribute="bottom" secondItem="QTd-pb-Eer" secondAttribute="bottom" constant="8" id="tur-SJ-KH8"/>
+            </constraints>
             <size key="customSize" width="187" height="169"/>
-            <point key="canvasLocation" x="-9" y="-25"/>
+            <point key="canvasLocation" x="-9.5" y="-25.5"/>
         </collectionViewCell>
     </objects>
 </document>
