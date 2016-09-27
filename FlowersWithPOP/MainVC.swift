@@ -10,6 +10,8 @@ import UIKit
 
 class MainVC: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     @IBOutlet weak var headerView: HeaderView!
 
     override func viewDidLoad() {
