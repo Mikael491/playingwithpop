@@ -9,7 +9,7 @@
 import Foundation
 
 protocol DataServiceDelegate {
-    func addHeroToLair()
+    func heroesAdded()
 }
 
 class DataService {
@@ -39,7 +39,7 @@ class DataService {
         heroesInSecretLair.append(Hero(id: 15, name: "Boy Chin Wonder", gender: 2, age: 8, powerLevel: 3, specialAbility: "Chin Attack", _affiliation: "Solo"))
         heroesInSecretLair.append(Hero(id: 16, name: "Blue Ranger", gender: 2, age: 23, powerLevel: 3, specialAbility: "Spin Attack", _affiliation: "Power Rangers"))
         
-        delegate?.addHeroToLair()
+        delegate?.heroesAdded()
         
     }
     
