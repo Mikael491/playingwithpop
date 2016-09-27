@@ -14,5 +14,12 @@ class HeroCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    var hero: Hero!
+    
+    func configureCell(hero: Hero) {
+        self.hero = hero
+        //TODO: Set cell images here
+    }
+    
 }
