@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FC5EFD691D99AB6000E1010C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EFD681D99AB6000E1010C /* AppDelegate.swift */; };
-		FC5EFD6B1D99AB6000E1010C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EFD6A1D99AB6000E1010C /* ViewController.swift */; };
 		FC5EFD6E1D99AB6000E1010C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5EFD6C1D99AB6000E1010C /* Main.storyboard */; };
 		FC5EFD701D99AB6000E1010C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5EFD6F1D99AB6000E1010C /* Assets.xcassets */; };
 		FC5EFD731D99AB6000E1010C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5EFD711D99AB6000E1010C /* LaunchScreen.storyboard */; };
 		FC5EFD7E1D99AB6000E1010C /* FlowersWithPOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EFD7D1D99AB6000E1010C /* FlowersWithPOPTests.swift */; };
+		FCF86FB91D99D1B10005517B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FB81D99D1B10005517B /* MainVC.swift */; };
+		FCF86FBD1D99D4290005517B /* DrawShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FBC1D99D4290005517B /* DrawShadow.swift */; };
+		FCF86FBF1D99D76B0005517B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FBE1D99D76B0005517B /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +28,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC5EFD651D99AB6000E1010C /* FlowersWithPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowersWithPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5EFD651D99AB6000E1010C /* HeroesWithPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroesWithPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5EFD681D99AB6000E1010C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC5EFD6A1D99AB6000E1010C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC5EFD6D1D99AB6000E1010C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC5EFD6F1D99AB6000E1010C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5EFD721D99AB6000E1010C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC5EFD741D99AB6000E1010C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC5EFD791D99AB6000E1010C /* FlowersWithPOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowersWithPOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5EFD791D99AB6000E1010C /* HeroesWithPOPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeroesWithPOPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5EFD7D1D99AB6000E1010C /* FlowersWithPOPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowersWithPOPTests.swift; sourceTree = "<group>"; };
 		FC5EFD7F1D99AB6000E1010C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCF86FB81D99D1B10005517B /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		FCF86FBC1D99D4290005517B /* DrawShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawShadow.swift; sourceTree = "<group>"; };
+		FCF86FBE1D99D76B0005517B /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,8 @@
 		FC5EFD5C1D99AB6000E1010C = {
 			isa = PBXGroup;
 			children = (
-				FC5EFD671D99AB6000E1010C /* FlowersWithPOP */,
-				FC5EFD7C1D99AB6000E1010C /* FlowersWithPOPTests */,
+				FC5EFD671D99AB6000E1010C /* HeroesWithPOP */,
+				FC5EFD7C1D99AB6000E1010C /* HeroesWithPOPTests */,
 				FC5EFD661D99AB6000E1010C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,40 +72,92 @@
 		FC5EFD661D99AB6000E1010C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC5EFD651D99AB6000E1010C /* FlowersWithPOP.app */,
-				FC5EFD791D99AB6000E1010C /* FlowersWithPOPTests.xctest */,
+				FC5EFD651D99AB6000E1010C /* HeroesWithPOP.app */,
+				FC5EFD791D99AB6000E1010C /* HeroesWithPOPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC5EFD671D99AB6000E1010C /* FlowersWithPOP */ = {
+		FC5EFD671D99AB6000E1010C /* HeroesWithPOP */ = {
 			isa = PBXGroup;
 			children = (
+				FCF86FBB1D99D39B0005517B /* Extensions */,
+				FCF86FBA1D99D3880005517B /* Protocols */,
+				FCF86FB41D99D0250005517B /* Resources */,
+				FCF86FB31D99D01C0005517B /* Controllers */,
+				FCF86FB21D99D0150005517B /* Views */,
+				FCF86FB11D99D00E0005517B /* Models */,
 				FC5EFD681D99AB6000E1010C /* AppDelegate.swift */,
-				FC5EFD6A1D99AB6000E1010C /* ViewController.swift */,
 				FC5EFD6C1D99AB6000E1010C /* Main.storyboard */,
 				FC5EFD6F1D99AB6000E1010C /* Assets.xcassets */,
 				FC5EFD711D99AB6000E1010C /* LaunchScreen.storyboard */,
 				FC5EFD741D99AB6000E1010C /* Info.plist */,
 			);
+			name = HeroesWithPOP;
 			path = FlowersWithPOP;
 			sourceTree = "<group>";
 		};
-		FC5EFD7C1D99AB6000E1010C /* FlowersWithPOPTests */ = {
+		FC5EFD7C1D99AB6000E1010C /* HeroesWithPOPTests */ = {
 			isa = PBXGroup;
 			children = (
 				FC5EFD7D1D99AB6000E1010C /* FlowersWithPOPTests.swift */,
 				FC5EFD7F1D99AB6000E1010C /* Info.plist */,
 			);
+			name = HeroesWithPOPTests;
 			path = FlowersWithPOPTests;
+			sourceTree = "<group>";
+		};
+		FCF86FB11D99D00E0005517B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FCF86FB21D99D0150005517B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCF86FBE1D99D76B0005517B /* HeaderView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FCF86FB31D99D01C0005517B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCF86FB81D99D1B10005517B /* MainVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FCF86FB41D99D0250005517B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FCF86FBA1D99D3880005517B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FCF86FBC1D99D4290005517B /* DrawShadow.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		FCF86FBB1D99D39B0005517B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC5EFD641D99AB6000E1010C /* FlowersWithPOP */ = {
+		FC5EFD641D99AB6000E1010C /* HeroesWithPOP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC5EFD821D99AB6000E1010C /* Build configuration list for PBXNativeTarget "FlowersWithPOP" */;
+			buildConfigurationList = FC5EFD821D99AB6000E1010C /* Build configuration list for PBXNativeTarget "HeroesWithPOP" */;
 			buildPhases = (
 				FC5EFD611D99AB6000E1010C /* Sources */,
 				FC5EFD621D99AB6000E1010C /* Frameworks */,
@@ -111,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = FlowersWithPOP;
+			name = HeroesWithPOP;
 			productName = FlowersWithPOP;
-			productReference = FC5EFD651D99AB6000E1010C /* FlowersWithPOP.app */;
+			productReference = FC5EFD651D99AB6000E1010C /* HeroesWithPOP.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FC5EFD781D99AB6000E1010C /* FlowersWithPOPTests */ = {
+		FC5EFD781D99AB6000E1010C /* HeroesWithPOPTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC5EFD851D99AB6000E1010C /* Build configuration list for PBXNativeTarget "FlowersWithPOPTests" */;
+			buildConfigurationList = FC5EFD851D99AB6000E1010C /* Build configuration list for PBXNativeTarget "HeroesWithPOPTests" */;
 			buildPhases = (
 				FC5EFD751D99AB6000E1010C /* Sources */,
 				FC5EFD761D99AB6000E1010C /* Frameworks */,
@@ -129,9 +185,9 @@
 			dependencies = (
 				FC5EFD7B1D99AB6000E1010C /* PBXTargetDependency */,
 			);
-			name = FlowersWithPOPTests;
+			name = HeroesWithPOPTests;
 			productName = FlowersWithPOPTests;
-			productReference = FC5EFD791D99AB6000E1010C /* FlowersWithPOPTests.xctest */;
+			productReference = FC5EFD791D99AB6000E1010C /* HeroesWithPOPTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -157,7 +213,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC5EFD601D99AB6000E1010C /* Build configuration list for PBXProject "FlowersWithPOP" */;
+			buildConfigurationList = FC5EFD601D99AB6000E1010C /* Build configuration list for PBXProject "HeroesWithPOP" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -170,8 +226,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC5EFD641D99AB6000E1010C /* FlowersWithPOP */,
-				FC5EFD781D99AB6000E1010C /* FlowersWithPOPTests */,
+				FC5EFD641D99AB6000E1010C /* HeroesWithPOP */,
+				FC5EFD781D99AB6000E1010C /* HeroesWithPOPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,8 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5EFD6B1D99AB6000E1010C /* ViewController.swift in Sources */,
 				FC5EFD691D99AB6000E1010C /* AppDelegate.swift in Sources */,
+				FCF86FBD1D99D4290005517B /* DrawShadow.swift in Sources */,
+				FCF86FB91D99D1B10005517B /* MainVC.swift in Sources */,
+				FCF86FBF1D99D76B0005517B /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +277,7 @@
 /* Begin PBXTargetDependency section */
 		FC5EFD7B1D99AB6000E1010C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FC5EFD641D99AB6000E1010C /* FlowersWithPOP */;
+			target = FC5EFD641D99AB6000E1010C /* HeroesWithPOP */;
 			targetProxy = FC5EFD7A1D99AB6000E1010C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -372,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.mikael.FlowersWithPOPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowersWithPOP.app/FlowersWithPOP";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeroesWithPOP.app/HeroesWithPOP";
 			};
 			name = Debug;
 		};
@@ -387,14 +445,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.mikael.FlowersWithPOPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowersWithPOP.app/FlowersWithPOP";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HeroesWithPOP.app/HeroesWithPOP";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC5EFD601D99AB6000E1010C /* Build configuration list for PBXProject "FlowersWithPOP" */ = {
+		FC5EFD601D99AB6000E1010C /* Build configuration list for PBXProject "HeroesWithPOP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC5EFD801D99AB6000E1010C /* Debug */,
@@ -403,21 +461,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC5EFD821D99AB6000E1010C /* Build configuration list for PBXNativeTarget "FlowersWithPOP" */ = {
+		FC5EFD821D99AB6000E1010C /* Build configuration list for PBXNativeTarget "HeroesWithPOP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC5EFD831D99AB6000E1010C /* Debug */,
 				FC5EFD841D99AB6000E1010C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		FC5EFD851D99AB6000E1010C /* Build configuration list for PBXNativeTarget "FlowersWithPOPTests" */ = {
+		FC5EFD851D99AB6000E1010C /* Build configuration list for PBXNativeTarget "HeroesWithPOPTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC5EFD861D99AB6000E1010C /* Debug */,
 				FC5EFD871D99AB6000E1010C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
