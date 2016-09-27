@@ -34,6 +34,10 @@
                 <constraint firstAttribute="bottom" secondItem="QTd-pb-Eer" secondAttribute="bottom" constant="8" id="tur-SJ-KH8"/>
             </constraints>
             <size key="customSize" width="187" height="169"/>
+            <connections>
+                <outlet property="heroImage" destination="QGm-8x-Gld" id="ZaG-B8-lnH"/>
+                <outlet property="heroName" destination="QTd-pb-Eer" id="zz5-ON-GuF"/>
+            </connections>
             <point key="canvasLocation" x="-9.5" y="-25.5"/>
         </collectionViewCell>
     </objects>
