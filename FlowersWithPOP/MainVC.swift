@@ -20,7 +20,8 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        let nib = 
+        let nib = UINib(nibName: "HeroCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "HeroCell")
         
         headerView.addDropShadow()
     }
