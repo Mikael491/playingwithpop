@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, DataServiceDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -36,5 +36,8 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         return UICollectionViewCell()
     }
     
+    func heroesAdded() {
+        print("Yay heroes were added, ready to use!")
+    }
 
 }
