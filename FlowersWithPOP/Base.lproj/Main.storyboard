@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="HeroesWithPOP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVJ-zp-FIb" userLabel="HeaderView" customClass="HeaderView" customModule="HeroesWithPOP" customModuleProvider="target">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeroesLOGO" translatesAutoresizingMaskIntoConstraints="NO" id="0R6-07-rxU" userLabel="Logo">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="TOK-Yb-RZG"/>
+                                            <constraint firstAttribute="height" constant="45" id="Vmn-8H-oGd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0R6-07-rxU" firstAttribute="centerX" secondItem="NVJ-zp-FIb" secondAttribute="centerX" id="HzJ-ci-EIe"/>
+                                    <constraint firstAttribute="height" constant="74" id="YrQ-R3-rvB"/>
+                                    <constraint firstItem="0R6-07-rxU" firstAttribute="centerY" secondItem="NVJ-zp-FIb" secondAttribute="centerY" constant="10" id="u4A-sB-3R6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NVJ-zp-FIb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CMY-GS-jsr"/>
+                            <constraint firstAttribute="trailing" secondItem="NVJ-zp-FIb" secondAttribute="trailing" id="Ozj-Uo-jLr"/>
+                            <constraint firstItem="NVJ-zp-FIb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lBi-qB-8gu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="NVJ-zp-FIb" id="x0P-Sf-h4s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="4.0479760119940034"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HeroesLOGO" width="547" height="77"/>
+    </resources>
 </document>

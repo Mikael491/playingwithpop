@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FlowersWithPOP.xcodeproj">
+      location = "self:/Users/mikaelteklehaimanot/iOS-Projects/FlowersWithPOP/HeroesWithPOP.xcodeproj">
    </FileRef>
 </Workspace>
