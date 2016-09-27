@@ -20,6 +20,8 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        let nib = 
+        
         headerView.addDropShadow()
     }
     
