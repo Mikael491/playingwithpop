@@ -14,6 +14,10 @@
 		FC5EFD7E1D99AB6000E1010C /* FlowersWithPOPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EFD7D1D99AB6000E1010C /* FlowersWithPOPTests.swift */; };
 		FCEDB81B1D9B0753009AC27B /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB8191D9B0753009AC27B /* HeroCell.swift */; };
 		FCEDB81C1D9B0753009AC27B /* HeroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEDB81A1D9B0753009AC27B /* HeroCell.xib */; };
+		FCEDB81E1D9C019A009AC27B /* ReuseableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB81D1D9C019A009AC27B /* ReuseableCell.swift */; };
+		FCEDB8201D9C09A2009AC27B /* UICollectionView+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB81F1D9C09A2009AC27B /* UICollectionView+Methods.swift */; };
+		FCEDB8221D9C1ADE009AC27B /* MutableCollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB8211D9C1ADE009AC27B /* MutableCollection+Ext.swift */; };
+		FCEDB8241D9C22EF009AC27B /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB8231D9C22EF009AC27B /* Shakeable.swift */; };
 		FCF86FB91D99D1B10005517B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FB81D99D1B10005517B /* MainVC.swift */; };
 		FCF86FBD1D99D4290005517B /* DrawShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FBC1D99D4290005517B /* DrawShadow.swift */; };
 		FCF86FBF1D99D76B0005517B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FBE1D99D76B0005517B /* HeaderView.swift */; };
@@ -43,6 +47,10 @@
 		FC5EFD7F1D99AB6000E1010C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCEDB8191D9B0753009AC27B /* HeroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		FCEDB81A1D9B0753009AC27B /* HeroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroCell.xib; sourceTree = "<group>"; };
+		FCEDB81D1D9C019A009AC27B /* ReuseableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseableCell.swift; sourceTree = "<group>"; };
+		FCEDB81F1D9C09A2009AC27B /* UICollectionView+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Methods.swift"; sourceTree = "<group>"; };
+		FCEDB8211D9C1ADE009AC27B /* MutableCollection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Ext.swift"; sourceTree = "<group>"; };
+		FCEDB8231D9C22EF009AC27B /* Shakeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
 		FCF86FB81D99D1B10005517B /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FCF86FBC1D99D4290005517B /* DrawShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawShadow.swift; sourceTree = "<group>"; };
 		FCF86FBE1D99D76B0005517B /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -161,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				FCF86FBC1D99D4290005517B /* DrawShadow.swift */,
+				FCEDB81D1D9C019A009AC27B /* ReuseableCell.swift */,
+				FCEDB8231D9C22EF009AC27B /* Shakeable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -168,6 +178,8 @@
 		FCF86FBB1D99D39B0005517B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FCEDB81F1D9C09A2009AC27B /* UICollectionView+Methods.swift */,
+				FCEDB8211D9C1ADE009AC27B /* MutableCollection+Ext.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -279,12 +291,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5EFD691D99AB6000E1010C /* AppDelegate.swift in Sources */,
+				FCEDB8241D9C22EF009AC27B /* Shakeable.swift in Sources */,
 				FCF86FBD1D99D4290005517B /* DrawShadow.swift in Sources */,
 				FCF86FB91D99D1B10005517B /* MainVC.swift in Sources */,
 				FCF86FC31D9A0CC00005517B /* DataService.swift in Sources */,
+				FCEDB8221D9C1ADE009AC27B /* MutableCollection+Ext.swift in Sources */,
 				FCF86FC11D99F5E50005517B /* Heroes.swift in Sources */,
 				FCEDB81B1D9B0753009AC27B /* HeroCell.swift in Sources */,
+				FCEDB81E1D9C019A009AC27B /* ReuseableCell.swift in Sources */,
 				FCF86FBF1D99D76B0005517B /* HeaderView.swift in Sources */,
+				FCEDB8201D9C09A2009AC27B /* UICollectionView+Methods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
