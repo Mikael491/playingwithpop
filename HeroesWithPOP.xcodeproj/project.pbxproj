@@ -17,6 +17,7 @@
 		FCEDB81E1D9C019A009AC27B /* ReuseableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB81D1D9C019A009AC27B /* ReuseableCell.swift */; };
 		FCEDB8201D9C09A2009AC27B /* UICollectionView+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB81F1D9C09A2009AC27B /* UICollectionView+Methods.swift */; };
 		FCEDB8221D9C1ADE009AC27B /* MutableCollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB8211D9C1ADE009AC27B /* MutableCollection+Ext.swift */; };
+		FCEDB8241D9C22EF009AC27B /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEDB8231D9C22EF009AC27B /* Shakeable.swift */; };
 		FCF86FB91D99D1B10005517B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FB81D99D1B10005517B /* MainVC.swift */; };
 		FCF86FBD1D99D4290005517B /* DrawShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FBC1D99D4290005517B /* DrawShadow.swift */; };
 		FCF86FBF1D99D76B0005517B /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF86FBE1D99D76B0005517B /* HeaderView.swift */; };
@@ -49,6 +50,7 @@
 		FCEDB81D1D9C019A009AC27B /* ReuseableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseableCell.swift; sourceTree = "<group>"; };
 		FCEDB81F1D9C09A2009AC27B /* UICollectionView+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Methods.swift"; sourceTree = "<group>"; };
 		FCEDB8211D9C1ADE009AC27B /* MutableCollection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Ext.swift"; sourceTree = "<group>"; };
+		FCEDB8231D9C22EF009AC27B /* Shakeable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
 		FCF86FB81D99D1B10005517B /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		FCF86FBC1D99D4290005517B /* DrawShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawShadow.swift; sourceTree = "<group>"; };
 		FCF86FBE1D99D76B0005517B /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				FCF86FBC1D99D4290005517B /* DrawShadow.swift */,
 				FCEDB81D1D9C019A009AC27B /* ReuseableCell.swift */,
+				FCEDB8231D9C22EF009AC27B /* Shakeable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5EFD691D99AB6000E1010C /* AppDelegate.swift in Sources */,
+				FCEDB8241D9C22EF009AC27B /* Shakeable.swift in Sources */,
 				FCF86FBD1D99D4290005517B /* DrawShadow.swift in Sources */,
 				FCF86FB91D99D1B10005517B /* MainVC.swift in Sources */,
 				FCF86FC31D9A0CC00005517B /* DataService.swift in Sources */,
