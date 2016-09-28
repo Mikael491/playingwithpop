@@ -18,7 +18,7 @@ extension Shakeable where Self: UIView {
         animation.autoreverses = true
         animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 4.0, y: self.center.y))
         animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 4.0, y: self.center.y))
-        
+        layer.add(animation, forKey: "position")
     }
     
 }
