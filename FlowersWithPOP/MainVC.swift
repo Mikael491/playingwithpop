@@ -32,7 +32,6 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         
         headerView.addDropShadow()
         
-//        TODO: Set cell size
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,8 +43,6 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeroCell", for: indexPath) as? HeroCell {
             cell.configureCell(hero: collectionViewDataSource[indexPath.row])
-//            cell.frame.size.height = 169
-//            cell.frame.size.width = 187
             return cell
         }
         
@@ -58,63 +55,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        
-        
         return CGSize(width: 187, height: 169)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
 }
