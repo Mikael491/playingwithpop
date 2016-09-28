@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+extension UICollectionViewCell: ReuseableCell {}
 extension UICollectionView {
     
     func register<T: UICollectionViewCell>(_: T.Type) where T: ReuseableCell {
@@ -19,12 +19,12 @@ extension UICollectionView {
     
     func dequeReuseableCell<T: UICollectionViewCell where T: ReuseableCell>(forIndexPath indexPath: NSIndexPath) -> T {
     
-        guard let cell = dequeueReusableCell(withReuseIdentifier: T.nibName, for: indexPath as IndexPath) as? HeroCell else {
+        guard let cell = dequeueReusableCell(withReuseIdentifier: T.nibName, for: indexPath as IndexPath) as? T else {
             print("=======================================================")
             print("=======================================================")
             fatalError("There was an error at guard statement in UICollectionView Extension file")
         }
         
-        return cell as! T
+        return cell 
     }
 }
