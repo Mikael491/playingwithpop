@@ -42,13 +42,9 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeroCell", for: indexPath) as? HeroCell {
-            cell.configureCell(hero: collectionViewDataSource[indexPath.row])
-            return cell
-        }
-        
-        return UICollectionViewCell()
+        let cell = collectionView.dequeReuseableCell(forIndexPath: indexPath as NSIndexPath) as HeroCell
+        cell.configureCell(hero: collectionViewDataSource[indexPath.row])
+        return cell
     }
     
     func heroesAdded() {
