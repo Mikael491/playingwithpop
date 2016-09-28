@@ -6,4 +6,13 @@
 //  Copyright © 2016 Mikael Teklehaimanot. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+protocol ReuseableCell {}
+
+extension ReuseableCell where Self: UITableViewCell {
+        static var nibName: String {
+            return String(describing: self)
+        }
+}
