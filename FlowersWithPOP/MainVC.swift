@@ -44,6 +44,12 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? HeroCell {
+            cell.shake()
+        }
+    }
+    
     func heroesAdded() {
         print("Yay heroes were added, ready to use!")
         collectionViewDataSource.append(contentsOf: dataService.heroesInSecretLair)
