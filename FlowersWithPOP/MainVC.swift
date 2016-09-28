@@ -27,11 +27,10 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        let nib = UINib(nibName: "HeroCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "HeroCell")
+        collectionView.register(HeroCell.self)
         
         headerView.addDropShadow()
-        
+        collectionViewDataSource.shuffle()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -40,13 +39,15 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeroCell", for: indexPath) as? HeroCell {
-            cell.configureCell(hero: collectionViewDataSource[indexPath.row])
-            return cell
+        let cell = collectionView.dequeReuseableCell(forIndexPath: indexPath as NSIndexPath) as HeroCell
+        cell.configureCell(hero: collectionViewDataSource[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? HeroCell {
+            cell.shake()
         }
-        
-        return UICollectionViewCell()
     }
     
     func heroesAdded() {
