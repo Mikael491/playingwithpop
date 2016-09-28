@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeroCell: UICollectionViewCell {
+class HeroCell: UICollectionViewCell, ReuseableCell {
     
     @IBOutlet weak var heroImage: UIImageView!
     @IBOutlet weak var heroName: UILabel!
