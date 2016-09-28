@@ -9,9 +9,9 @@
 import UIKit
 
 
-protocol ReuseableCell {}
+protocol ReuseableCell: class {}
 
-extension ReuseableCell where Self: UITableViewCell {
+extension ReuseableCell where Self: UIView {
         static var nibName: String {
             return String(describing: self)
         }
